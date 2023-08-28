@@ -1,0 +1,30 @@
+
+.button-list{
+  width: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.lngBtn {
+  border: none;
+  color: inherit;
+  background: initial;
+  font-size: 1.8rem;
+  padding: 5px;
+  cursor: pointer;
+
+}
+
+
+@media screen and (max-width: 500px) {
+  .f {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #EAB2A0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 1rem;  
+  }
+}
