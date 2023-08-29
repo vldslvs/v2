@@ -1,0 +1,50 @@
+
+.button-list{
+  width: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.button-list:hover{
+  width: 14rem;
+  border-radius: 15px;
+  background: #9a7b7153;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  transition: 0.3s;
+}
+
+
+.lngBtn {
+  border: none;
+  color: inherit;
+  background: initial;
+  font-size: 1.8rem;
+  padding: 5px;
+  cursor: pointer;
+}
+.lngBtn:hover{
+  border-radius: 10px;
+  font-size: 1.8rem;
+  transition: 0.4s;
+}
+.lngBtn:active{
+  font-size: 2rem;
+  transition: 0.4s;
+  font-weight: 800;
+}
+
+
+@media screen and (max-width: 500px) {
+  .f {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #EAB2A0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 1rem;  
+  }
+}
