@@ -28,7 +28,7 @@ const Intro = () => {
             </div>
           </div>
           <div className="i-desc">
-          <div>{t("I am a beginner developer from Gdansk / Minsk. I actively develop my skills in the field of design of Internet products and their functioning. I also actively study Polish and English.")}</div>
+          <div>{t("I am a developer from Gdansk / Minsk. I actively develop my skills in the field of design of Internet products and their functioning. I also actively study Polish and English.")}</div>
           </div>
         </div>
         

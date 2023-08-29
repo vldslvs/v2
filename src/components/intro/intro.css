@@ -4,8 +4,9 @@
   overflow: hidden;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  background: #f1c47639;
-  overflow: hidden;
+  background: #9eb3843c;
+  overflow-y: hidden;
+  position: relative;
 }
 
 .i-left {
@@ -93,8 +94,8 @@
 
 
 .i-img {
-  width: 150%;
-  height: 106%;
+  width: 100%;
+  height: 100%;
   object-fit:cover;
   position: absolute;
   z-index: 999;
@@ -111,30 +112,19 @@
   right: 2px;
   z-index: 2;
   object-fit: cover;
+  animation: kenburns-left 35s linear both;
+}
+@keyframes kenburns-left {
+  0% {
+    transform: scale(1) translate(0, 0);
+    transform-origin: 16% 50%;
+  }
+  100% {
+    transform: scale(1.25) translate(-20px, 15px);
+    transform-origin: left;
+  }
 }
 
-@media screen and (max-width: 500px) {
-  .i {
-    flex-direction: column;
-  }
-
-  .i-left-wrapper {
-    display: flex;
-    align-items: center;
-    height: 120%;
-  }
-  .i-title {
-    display: none;
-  }
-
-  .i-desc{
-    display: flex;
-    background: #2e2f2c;
-    z-index: 999;
-    padding: 1rem;
-    border-radius: 20px;
-    color: aliceblue;
-    font-weight: 600;
-  }
+@media screen and (max-width: 390px) {
   
 }

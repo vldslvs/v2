@@ -1,7 +1,7 @@
 .t{
     width: 190px;
     height: 65px;
-    border-radius: 22px;
+    border-radius: 20px;
     top: 90%;
     left: 90%;
     z-index: 999;
@@ -10,13 +10,31 @@
     justify-content: space-around;
     border: 2px solid #fff;
     background-color: #ffffff63;
-    
 }
-
+.t:hover{
+    width: 195px;
+    height: 65px;
+    border-radius: 25px;
+    top: 90%;
+    left: 90%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid #fff;
+    background-color: aqua;
+}
 
 .bx-moon {
     position: absolute;
     font-size: 3rem;
+    transition: 0.3s;
+}
+.bx-moon:hover{
+    font-size: 3.3rem;
+    transition: 0.3s;
+    color: #fff;
+    border-radius: 50%;
 }
 .t-button{
     width: 49px;
