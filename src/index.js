@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ThemeProvider>
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<div className='load'><div className='load-box'>Loading...</div></div>}>
       <App />
     </Suspense>
     </ThemeProvider>
