@@ -9,9 +9,10 @@ const Frontend = () => {
   };
   return (
     <div className='skills-content'>
-        <h3 className='skills-title'>{t("Frontend Dev")}</h3>
+      <i class='bx bxs-keyboard'></i>
+        <h3 className='skills-title'>{t("Frontend")}</h3>
         <div className='skills-box'>
-            <div className='skills-group'>
+            <div className='skills-group-frontend'>
 
                 <div className='skills-item-block'>
               <div className='skills-item-name'>
@@ -79,6 +80,26 @@ const Frontend = () => {
                 <i class='bx bx-badge-check' ></i>
                 </div>
                 <h3 className='skills-name'>Next JS</h3>
+                </div>
+                <span className='skills-level'>{t("Basic")}</span>
+                </div>
+
+                <div className='skills-item-block'>
+              <div className='skills-item-name'>
+                <div className='skills-data'>
+                <i class='bx bx-badge-check' ></i>
+                </div>
+                <h3 className='skills-name'>React Native</h3>
+                </div>
+                <span className='skills-level'>{t("Basic")}</span>
+                </div>
+
+                <div className='skills-item-block'>
+              <div className='skills-item-name'>
+                <div className='skills-data'>
+                <i class='bx bx-badge-check' ></i>
+                </div>
+                <h3 className='skills-name'>Angular</h3>
                 </div>
                 <span className='skills-level'>{t("Basic")}</span>
                 </div>

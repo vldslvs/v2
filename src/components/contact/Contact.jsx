@@ -5,7 +5,6 @@ import { ThemeContext } from "../../context";
 import { Trans, useTranslation } from 'react-i18next';
 import Toggle from "../toggle/Toggle";
 import LangBtn from "../lang_btn/lang-btn";
-import { motion } from "framer-motion";
 
 const Contact = () => {
   const formRef = useRef();

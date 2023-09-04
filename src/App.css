@@ -74,3 +74,17 @@ body {
     text-rendering: optimizeSpeed;
     line-height: 1.5;
   }
+  btn {
+    border: none;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #eac0b284;
+    color: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 2px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    transition: 0.3s;
+}

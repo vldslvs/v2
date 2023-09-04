@@ -9,6 +9,7 @@ const Backend = () => {
   };
   return (
     <div className='skills-content'>
+      <i class='bx bx-cloud-upload'></i>
         <h3 className='skills-title'>Backend</h3>
         <div className='skills-box'>
             <div className='skills-group'>

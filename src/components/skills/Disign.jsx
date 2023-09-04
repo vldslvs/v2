@@ -8,15 +8,17 @@ const Disign = () => {
    };
   return (
     <div className='skills-content'>
+      <i class='bx bx-pencil' ></i>
         <h3 className='skills-title'>UX/UI</h3>
         <div className='skills-box'>
+        <i class='bx bx-chevrons-down'></i>
             <div className='skills-group'>
               <div className='skills-item-block'>
               <div className='skills-item-name'>
                 <div className='skills-data'>
                 <i class='bx bx-badge-check' ></i>
                 </div>
-                <h3 className='skills-name'>Figma</h3>
+                <h3 className='skills-name'>Figma</h3> 
                 </div>
                 <span className='skills-level'>{t("Intermeditate")}</span>
                 </div>

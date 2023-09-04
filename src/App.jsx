@@ -36,7 +36,7 @@ const App = () => {
       <Intro />
       {/* <About /> */}
       <Skills/>
-      <Contact/>
+      {/* <Contact/> */}
       </div>
     </>
   )
