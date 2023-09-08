@@ -4,7 +4,7 @@
   overflow: hidden;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  background: #9eb3843c;
+  background: #e9baaa1d;
   overflow-y: hidden;
   position: relative;
 }
@@ -160,7 +160,6 @@
     opacity: 99;
   }
 }
-
 @media screen and (max-width: 390px) {
   .i-left-wrapper {
     padding: 1rem;

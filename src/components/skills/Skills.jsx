@@ -3,6 +3,7 @@ import './skills.css'
 import Frontend from './Frontend'
 import Backend from './Backend'
 import Disign from './Disign'
+import '../intro/intro.css'
 import { Trans, useTranslation } from 'react-i18next';
 import { useContext, useRef, useState } from "react";
 

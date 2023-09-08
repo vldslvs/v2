@@ -74,7 +74,7 @@ body {
     text-rendering: optimizeSpeed;
     line-height: 1.5;
   }
-  btn {
+  .contact-btn {
     border: none;
     width: 100%;
     padding-top: 10px;
@@ -87,4 +87,20 @@ body {
     margin-top: 2rem;
     margin-bottom: 2rem;
     transition: 0.3s;
+}
+.modal-content {
+  z-index: 3;
+  position: absolute;
+  display: block;
+  width: max-content;
+  height: max-content;
+  justify-content: space-around;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #f4ead9;
+  padding: 14px 28px;
+  border-radius: 15px;
+  flex-shrink:0
 }

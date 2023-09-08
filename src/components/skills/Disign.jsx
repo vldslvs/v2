@@ -1,18 +1,35 @@
-import React from 'react'
+import React, { useState } from "react";
 import { Trans, useTranslation } from 'react-i18next';
-import '../skills/skills.css'
+import './skills.css'
+
 const Disign = () => {
     const { t, i18n } = useTranslation();
     const changeLanguage = (language) => {
      i18n.changeLanguage(language);
    };
+   const [modal, setModal] = useState(false);
+
+  const toggleModal = () => {
+    setModal(!modal);
+  };
+
+  if(modal) {
+    document.body.classList.add('active-modal')
+  } else {
+    document.body.classList.remove('active-modal')
+  }
   return (
     <div className='skills-content'>
-      <i class='bx bx-pencil' ></i>
-        <h3 className='skills-title'>UX/UI</h3>
-        <div className='skills-box'>
-        <i class='bx bx-chevrons-down'></i>
-            <div className='skills-group'>
+      <button onClick={toggleModal} className="btn-modal">
+      <h3 className='skills-title'>{t("UX/UI")} ⤵</h3>
+      </button>
+
+      {modal && (
+        <div className="modal">
+          <div onClick={toggleModal} className="overlay"></div>
+          <div className="modal-content">
+          <h3 className='skills-title'>{t("My Des steck")}</h3>
+             <div className='skills-group'>
               <div className='skills-item-block'>
               <div className='skills-item-name'>
                 <div className='skills-data'>
@@ -47,9 +64,13 @@ const Disign = () => {
 
                 
             </div>
+            <button className="close-modal" onClick={toggleModal}>
+            <i class='bx bx-x'></i>
+            </button>
+          </div>
         </div>
-    </div>
-  )
-}
-
+      )}
+      </div>
+  );
+      }
 export default Disign

@@ -6,6 +6,7 @@ import Intro from './components/intro/Intro'
 import About from './components/about/About'
 import Contact from './components/contact/Contact'
 
+
 import './App.css'
 import { ThemeContext } from "./context";
 import LangBtn from './components/lang_btn//lang-btn';
@@ -32,11 +33,10 @@ const App = () => {
         color: darkMode && "white",
       }}
     >
-      
       <Intro />
       {/* <About /> */}
       <Skills/>
-      {/* <Contact/> */}
+      <Contact/>
       </div>
     </>
   )
