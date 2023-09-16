@@ -31,8 +31,9 @@ const Skills = () => {
       <div className='cv-item'>
         <p>{t("Here you can download and view my CV")}</p>
         <button className='cv-button'>download</button>
+        {/* coment */}
         </div>
-    </div>
+        </div>
   )
 }
 

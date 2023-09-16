@@ -1,10 +1,9 @@
 .s {
-    height: 100vh;
+    padding-top: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background: #e9baaa1d;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
@@ -16,6 +15,9 @@
     height: auto;
     background: #e9baaa84;
     border-radius: 20px;
+}
+.s-cencer:hover {
+    padding: 1rem 4rem 1rem 4rem;
 }
 .bx-down-arrow-alt{
     font-size: larger;
@@ -83,9 +85,7 @@
     position: fixed;
 }
 
-.overlay {
-    background:#e9baaa1d;
-}
+
 .modal-content {
     z-index: 3;
     position: absolute;
@@ -190,11 +190,23 @@
     padding-bottom: 10px;
     background-color: #eac0b284;
     color: inherit;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: x-large;
     cursor: pointer;
     letter-spacing: 2px;
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
+    transition: 0.3s;
+}
+.cv-button:hover {
+    border: none;
+    width: 90%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #eac0b284;
+    color: inherit;
+    font-weight: 900;
+    font-size: xx-large;
+    cursor: pointer;
+    letter-spacing: 3px;
     transition: 0.3s;
 }
 
@@ -234,11 +246,14 @@
     flex-direction:column;
 }
 .cv-item {
-    padding: 1rem 2rem;
-    background-color: #f1c47639;
+    margin: 1rem 2rem;
     display: flex;
-    flex-direction: column;
-    border-radius:10px;
+    padding: 0rem 2rem 0rem 2rem;
+    flex-direction: row;
+    border-radius:15px;
+}
+p {
+    font-size: x-large;
 }
 @media screen and (max-width: 1100px){
     .s-cencer {
@@ -265,6 +280,62 @@
         grid-template-columns: repeat(2, 10rem);
     }
 }
+.interior {
+    margin: 0rem 2rem 0rem 2rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-size: x-large;
+    letter-spacing: 1px;
+    font-weight: 800;
+    transition: 0.3s;
+  }
+  a:hover {
+    letter-spacing: 2px;
+    font-weight: 900;
+
+  }
+  
+  .container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-window {
+    & > div {
+      border-radius: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .modal-window div:not(:last-of-type) {
+    margin-bottom: 15px;
+    
+  }
+  .skills-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+  }
+  
+  
+  small {
+    color: lightgray;
+  }
+  
+  .btn {
+    background-color: white;
+    padding: 1em 1.5em;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    i {
+      padding-right: 0.3em;
+    }
+  }
+
 @media screen and (max-width: 825px){
     .skills__component {
         display: grid;
@@ -322,8 +393,85 @@
     .skills-title {
         font-size: xx-large;
     }
-    .skills-group {
+    .skills-item-block {
+        margin: 0.3rem;
+        padding: 0.3rem ;
+        border-radius: 20px;
+        transition: 0.2s;
+    }
+    .skills-grid{
         display: grid;
-        grid-template-columns: repeat(1, 10rem);
+        grid-template-columns: repeat(2, 150px);
     }
 }
+.modal-window {
+    position: fixed;
+    background-color: rgba(37, 35, 14, 0.508);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    &:target {
+      visibility: visible;
+      opacity: 1;
+      pointer-events: auto;
+    }
+    & > div {
+      width: max-content;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 2em;
+      background: #eac0b2;
+      box-shadow: 2px 26px 21px 0px rgba(0,0,0,0.54);
+    }
+    header {
+      font-weight: bold;
+    }
+    h1 {
+      font-size: 150%;
+      margin: 0 0 15px;
+    }
+  }
+  
+  .modal-close {
+    color: #aaa;
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+    &:hover {
+      color: black;
+    }
+  }
+  
+  /* Demo Styles */
+  
+
+  /* body {
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,
+      Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-weight: 600;
+    background-image: linear-gradient(to right, #7f53ac 0, #657ced 100%);
+    color: black;
+  } */
+  
+ 
+
+
+
+
+
+
+
+

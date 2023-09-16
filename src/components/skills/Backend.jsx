@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import './skills.css'
 import { Trans, useTranslation } from 'react-i18next';
@@ -11,29 +10,20 @@ const Backend = () => {
   };
   const [modal, setModal] = useState(false);
 
-  const toggleModal = () => {
-    setModal(!modal);
-  };
-
-  if(modal) {
-    document.body.classList.add('active-modal')
-  } else {
-    document.body.classList.remove('active-modal')
-  }
-  return (
-    <div className='skills-content'>
-      <h3 className='skills-title'>Backend </h3>
-      <button onClick={toggleModal} className="btn-modal">⤵
-      </button>
-
-      {modal && (
-        <div className="modal">
-          <div onClick={toggleModal} className="overlay"></div>
-          <div className="modal-content">
-          <h3 className='skills-title'>{t("My Backend steck")}</h3>
-          
-            <div className='skills-group'>
-            <div className='skills-item-block'>
+  
+    return (
+      <>
+     <div class="container">
+    <div className="interior">
+      <a classname="btn" href="#open-modal-backend"><h1>Backend ⤵</h1></a>
+    </div>
+  </div>
+  <div id="open-modal-backend" className="modal-window">
+    <div>
+      <a href="#" title="Close" className="modal-close">Close</a>
+      <h1> My Backend Steck</h1>
+      <div className="skills-grid">
+              <div className='skills-item-block'>
               <div className='skills-item-name'>
                 <div className='skills-data'>
                 <i class='bx bx-badge-check' ></i>
@@ -44,7 +34,7 @@ const Backend = () => {
                 </div>
 
                 <div className='skills-item-block'>
-              <div className='skills-item-name'>
+                <div className='skills-item-name'>
                 <div className='skills-data'>
                 <i class='bx bx-badge-check' ></i>
                 </div>
@@ -71,17 +61,16 @@ const Backend = () => {
                 </div>
                 <span className='skills-level'>{t("Intermeditate")}</span>
                 </div>
-            </div>
-            <button className="close-modal" onClick={toggleModal}>
-            <i class='bx bx-x'></i>
-            </button>
-          </div>
-        </div>
-      )}
       </div>
+  
+      <div><small></small></div>
+  
+  
+      and more coming soon...
+    </div>
+  </div>
+  
+      </>
   );
-}
-
-
+      }
 export default Backend
-

@@ -7,7 +7,9 @@
   background: #e9baaa1d;
   overflow-y: hidden;
   position: relative;
+  
 }
+
 
 .i-left {
   flex: 1;

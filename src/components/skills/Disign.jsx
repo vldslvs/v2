@@ -1,36 +1,29 @@
 import React, { useState } from "react";
-import { Trans, useTranslation } from 'react-i18next';
 import './skills.css'
+import { Trans, useTranslation } from 'react-i18next';
+
 
 const Disign = () => {
-    const { t, i18n } = useTranslation();
-    const changeLanguage = (language) => {
-     i18n.changeLanguage(language);
-   };
-   const [modal, setModal] = useState(false);
-
-  const toggleModal = () => {
-    setModal(!modal);
+   const { t, i18n } = useTranslation();
+   const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
   };
+  const [modal, setModal] = useState(false);
 
-  if(modal) {
-    document.body.classList.add('active-modal')
-  } else {
-    document.body.classList.remove('active-modal')
-  }
-  return (
-    <div className='skills-content'>
-      <button onClick={toggleModal} className="btn-modal">
-      <h3 className='skills-title'>{t("UX/UI")} ⤵</h3>
-      </button>
-
-      {modal && (
-        <div className="modal">
-          <div onClick={toggleModal} className="overlay"></div>
-          <div className="modal-content">
-          <h3 className='skills-title'>{t("My Des steck")}</h3>
-             <div className='skills-group'>
-              <div className='skills-item-block'>
+  
+    return (
+      <>
+     <div class="container">
+    <div className="interior">
+      <a classname="btn" href="#open-modal"><h1>Disign ⤵</h1></a>
+    </div>
+  </div>
+  <div id="open-modal" className="modal-window">
+    <div>
+      <a href="#" title="Close" className="modal-close">Close</a>
+      <h1> My Disign Steck</h1>
+      <div className="skills-grid">
+      <div className='skills-item-block'>
               <div className='skills-item-name'>
                 <div className='skills-data'>
                 <i class='bx bx-badge-check' ></i>
@@ -58,19 +51,17 @@ const Disign = () => {
                 <h3 className='skills-name'>Three.js</h3>
                 </div>
                 <span className='skills-level'>{t("Basic")}</span>
-                </div>
-
-                
-
-                
-            </div>
-            <button className="close-modal" onClick={toggleModal}>
-            <i class='bx bx-x'></i>
-            </button>
-          </div>
-        </div>
-      )}
+                </div>  
       </div>
+  
+      <div><small></small></div>
+  
+  
+      and more coming soon...
+    </div>
+  </div>
+  
+      </>
   );
       }
 export default Disign
