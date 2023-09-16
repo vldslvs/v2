@@ -34,17 +34,11 @@ const Frontend = () => {
                 </div>
 
                 <div className='skills-item-block'>
-              <div className='skills-item-name'>
-                <div className='skills-data'>
-                <i class='bx bxl-css3' ></i>
-                </div>
-                <h3 className='skills-name'>CSS</h3>
-                </div>
                 <div className='skills-item-name'>
                 <div className='skills-data'>
                 <i class='bx bxl-sass' ></i>
                 </div>
-                <h3 className='skills-name'>SASS</h3>
+                <h3 className='skills-name'>CSS / SASS</h3>
                 </div>
                 
                 <span className='skills-level'>{t("Intermeditate")}</span>

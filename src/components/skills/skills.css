@@ -340,6 +340,7 @@ a {
     .skills__component {
         display: grid;
         grid-template-columns: repeat(1, 25rem);
+        
         align-items: center;
         margin: 0;
     }
@@ -357,6 +358,7 @@ a {
     }
     .skills-group-frontend {
         display: grid;
+        
         grid-template-columns: auto;
     }
 }
@@ -394,14 +396,14 @@ a {
         font-size: xx-large;
     }
     .skills-item-block {
-        margin: 0.3rem;
-        padding: 0.3rem ;
         border-radius: 20px;
         transition: 0.2s;
     }
     .skills-grid{
         display: grid;
         grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(5, 110px);
+        column-gap: 20px;
     }
 }
 .modal-window {
@@ -427,7 +429,7 @@ a {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      padding: 2em;
+      padding: 1rem;
       background: #eac0b2;
       box-shadow: 2px 26px 21px 0px rgba(0,0,0,0.54);
     }
