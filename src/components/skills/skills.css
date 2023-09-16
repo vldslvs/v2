@@ -287,13 +287,11 @@ p {
 a {
     color: inherit;
     text-decoration: none;
-    font-size: x-large;
     letter-spacing: 1px;
     font-weight: 800;
     transition: 0.3s;
   }
   a:hover {
-    letter-spacing: 2px;
     font-weight: 900;
 
   }
@@ -366,7 +364,6 @@ a {
 @media screen and (max-width: 450px) {
     .s-cencer {
         padding: 1rem;
-        height: auto;
     }
     .skills__component {
         display: flex;
@@ -401,9 +398,19 @@ a {
     }
     .skills-grid{
         display: grid;
-        grid-template-columns: repeat(2, 150px);
+        grid-template-columns: repeat(2, 140px);
         grid-template-rows: repeat(5, 110px);
         column-gap: 20px;
+    }
+    .interior {
+        margin: none;
+    }
+    .cv-item {
+        margin: 1rem 2rem;
+        display: flex;
+        padding: 0rem 2rem 0rem 2rem;
+        flex-direction: column;
+        border-radius: 15px;
     }
 }
 .modal-window {
@@ -440,6 +447,11 @@ a {
       font-size: 150%;
       margin: 0 0 15px;
     }
+    a:hover {
+        letter-spacing: none;
+        font-weight: 800;
+    
+      }
   }
   
   .modal-close {
