@@ -507,6 +507,10 @@ textarea:hover {
   margin-left: 0%;
   transition-duration: 0.8s;
 }
+.c-right {
+  padding: 0 1rem;
+  transition: 0.3s;
+}
 .link-name:hover .text-hover-send {    
   opacity: 1;
   font-size: 0.7rem;
@@ -545,8 +549,9 @@ form {
   margin-top: 20px;
   width: 100%;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  padding: 0;
+  align-items: center;
 }
 input {
   width: 100%;
