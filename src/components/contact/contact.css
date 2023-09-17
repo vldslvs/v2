@@ -435,10 +435,15 @@ textarea:hover {
     border-radius: 15px;
     transition-duration: 0.1s;
 }
+.c-left:hover {
+  padding: 0.5rem;
+  margin: none;
+}
 .c-right:hover {
   padding: 0.5rem;
   transition: 0.4s;
 }
+
 .c-desc {
   width: 100%;
   font-weight: 300;
@@ -540,6 +545,7 @@ form {
   margin-top: 20px;
   width: 100%;
   display: flex;
+  align-items: center;
   flex-direction: column;
 }
 input {
@@ -615,5 +621,18 @@ textarea:hover {
   border-radius: 17px;
   transition: 0.2s;
   font-size: x-large;
+}
+.footer-component {
+  display: flex;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #eac0b284;
+  flex-direction: column;
+}
+.button-lang{
+  padding: 0.4rem;
 }
 }

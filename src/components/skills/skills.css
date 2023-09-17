@@ -77,7 +77,7 @@
 
 .modal, .overlay {
     width: 100vw;
-    /* height: 90vh; */
+    height: 90vh;
     top: 0;
     left: 0;
     right: 0;
@@ -88,7 +88,7 @@
 
 .modal-content {
     z-index: 3;
-    position: absolute;
+    position: fixed;
     overflow: hidden;
     display: block;
     width: max-content;
@@ -198,7 +198,7 @@
 }
 .cv-button:hover {
     border: none;
-    width: 90%;
+    width: min-content;
     padding-top: 12px;
     padding-bottom: 12px;
     background-color: #eac0b284;
@@ -293,7 +293,6 @@ a {
   }
   a:hover {
     font-weight: 900;
-
   }
   
   .container {
@@ -365,17 +364,26 @@ a {
     .s-cencer {
         padding: 1rem;
     }
+    .s-cencer:hover {
+        padding: 1.2rem;
+    }
     .skills__component {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0;
     }
+    .interior {
+        margin: 0.3rem;
+    }
+    a:hover {
+        font-weight: 800;
+      }
     .skills-group-frontend {
         display: grid;
         grid-template-columns: auto;
     }
-
+    
     .skills-content {
         display: flex;
         flex-direction: column;
@@ -393,13 +401,25 @@ a {
         font-size: xx-large;
     }
     .skills-item-block {
+        padding: 0;
+        margin: 0;
         border-radius: 20px;
         transition: 0.2s;
+        font-size: 80%;
+    }
+    .skills-item-block:hover {
+        letter-spacing: 0;
+        margin: 0;
+        padding: 0;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.442);
+        transition: 0.2s;
+        font-size: 80%;
     }
     .skills-grid{
         display: grid;
-        grid-template-columns: repeat(2, 140px);
-        grid-template-rows: repeat(5, 110px);
+        grid-template-columns: repeat(2, 130px);
+        grid-template-rows: repeat(5, 90px);
         column-gap: 20px;
     }
     .interior {
@@ -408,9 +428,26 @@ a {
     .cv-item {
         margin: 1rem 2rem;
         display: flex;
-        padding: 0rem 2rem 0rem 2rem;
+        align-items: center;
+        margin: 0;
+        padding: 0rem 1rem 0rem 1rem;
         flex-direction: column;
         border-radius: 15px;
+        margin-bottom: 2rem;
+
+    }
+    .cv-button {
+        border: none;
+        width: fit-content;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        background-color: #eac0b284;
+        color: inherit;
+        font-weight: 900;
+        font-size: xx-large;
+        cursor: pointer;
+        letter-spacing: 3px;
+        transition: 0.3s;
     }
 }
 .modal-window {
