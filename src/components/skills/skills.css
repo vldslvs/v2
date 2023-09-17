@@ -1,4 +1,5 @@
 .s {
+    height: 100vh;
     padding-top: 4rem;
     display: flex;
     flex-direction: column;
@@ -15,6 +16,7 @@
     height: auto;
     background: #e9baaa84;
     border-radius: 20px;
+    transition: 0.3s;
 }
 .s-cencer:hover {
     padding: 1rem 4rem 1rem 4rem;
@@ -185,16 +187,16 @@
 }
 .cv-button {
     border: none;
-    width: 100%;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: #eac0b284;
     color: inherit;
     font-weight: 600;
-    font-size: x-large;
+    font-size: xx-large;
     cursor: pointer;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     transition: 0.3s;
+    padding: 10%;
 }
 .cv-button:hover {
     border: none;
@@ -251,11 +253,10 @@
     display: flex;
     padding: 0rem 2rem 0rem 2rem;
     flex-direction: row;
+    align-items: center;
     border-radius:15px;
 }
-p {
-    font-size: x-large;
-}
+
 @media screen and (max-width: 1100px){
     .s-cencer {
         padding: 1rem 4rem 1rem 4rem;

@@ -173,10 +173,11 @@
   .i-right {
     display: none;
   }
-  .i-desc{
+  .i-desc {
+    width: auto;
     background: #9eb3848d;
     padding: 1rem;
     border-radius: 10px;
     opacity: 99;
-  }
+}
 }
