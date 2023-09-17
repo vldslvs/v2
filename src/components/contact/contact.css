@@ -502,7 +502,7 @@ textarea:hover {
   color: inherit;
   transition: 0.2s;
 }
-.c-left:hover {
+.c-left:active {
   padding: 1rem;
   margin-left: 0%;
   transition-duration: 0.8s;
@@ -638,6 +638,14 @@ textarea:hover {
   flex-direction: column;
 }
 .button-lang{
-  padding: 0.4rem;
+  padding: 1rem 0.3rem;
+}
+.button-list {
+  width: 14rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 15px;
+  transition: 0.3s;
 }
 }
