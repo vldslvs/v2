@@ -1,4 +1,4 @@
-.t{
+.t {
     width: 190px;
     height: 59px;
     border-radius: 20px;
@@ -11,17 +11,11 @@
     border: 2px solid #fff;
     background-color: #ffffff63;
 }
-.t:hover{
+
+.t:hover {
     width: 195px;
     height: 65px;
     border-radius: 25px;
-    top: 90%;
-    left: 90%;
-    z-index: 999;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border: 2px solid #fff;
     background-color: aqua;
 }
 
@@ -30,22 +24,20 @@
     font-size: 3rem;
     transition: 0.3s;
 }
-.bx-moon:hover{
+
+.bx-moon:hover {
     font-size: 3.3rem;
-    transition: 0.3s;
     color: #fff;
     border-radius: 50%;
 }
-.t-button{
+
+.t-button {
     width: 49px;
     height: 49px;
     border-radius: 50%;
     cursor: pointer;
 }
 
-
 @media screen and (max-width: 414px) {
-    .t{
-        scale: 70%;
-    }
+    /* Add your media query styles here */
 }
