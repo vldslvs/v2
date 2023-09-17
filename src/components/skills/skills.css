@@ -1,5 +1,4 @@
 .s {
-    height: 100vh;
     padding-top: 4rem;
     display: flex;
     flex-direction: column;
@@ -196,7 +195,7 @@
     cursor: pointer;
     letter-spacing: 4px;
     transition: 0.3s;
-    padding: 10%;
+    padding: 3%;
 }
 .cv-button:hover {
     border: none;
@@ -298,7 +297,7 @@ a {
   }
   
   .container {
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -477,7 +476,7 @@ a {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
-    transition: all 0.3s;
+    transition: all 0.4s;
     &:target {
       visibility: visible;
       opacity: 1;
@@ -503,7 +502,6 @@ a {
     a:hover {
         letter-spacing: none;
         font-weight: 800;
-    
       }
   }
   
