@@ -457,14 +457,14 @@ textarea:focus {
 .link-name:hover .text-hover-send,
 .link-name:hover .text-hover-call {
   opacity: 1;
-  font-size: 0.7rem;
+  font-size: 1.2rem;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
   color: inherit;
   background: #eac0b2e4;
-  padding: 0.5rem;
+  padding: 1rem;
   position: absolute;
   width: min-content;
   border-radius: 20px;
