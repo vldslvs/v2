@@ -11,7 +11,6 @@ const Toggle = () => {
   };
   return (
     <div className="t">
-      <div>{t("Dark Mode")}</div>
       <div
         className="t-button"
         onClick={handleClick}

@@ -44,7 +44,7 @@ const Contact = () => {
             <div className="c-info-item">
             <i class='bx bxl-linkedin' ></i>
             <a className="link-name" href="https://www.linkedin.com/in/uladzislau-hermanovich/">
-            <span class="text-hover-send">{t("Send message in")} linkedin</span>
+            {/* <span class="text-hover-send">{t("Send message in linkedin")}</span> */}
             <span class="text-send">linkedin</span>
             </a>
             </div>
@@ -52,13 +52,13 @@ const Contact = () => {
             <i class='bx bxl-zoom' ></i>
             <a className="link-name" href="https://us05web.zoom.us/profile">
             <span class="text-call">zoom</span>
-            <span class="text-hover-call">{t("Schedule a conference in")} Zoom </span>
+            {/* <span class="text-hover-call">{t("Schedule a conference Zoom")}</span> */}
             </a>
             </div>
             <div className="c-info-item">
             <i class='bx bxl-instagram' ></i>
             <a className="link-name" href="https://www.instagram.com/0451od/">
-            <span class="text-hover-send">{t("Send message in")} instagram</span>
+            {/* <span class="text-hover-send">{t("Send message in instagram")}</span> */}
             <span class="text-send">instagram</span> 
             </a>
             </div>
